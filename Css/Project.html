@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            padding: 8px 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .navbar ul li a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 15px;
+            margin: 30px;
+            text-align: center;
+        }
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .profile-picture img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .info-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .info {
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .info:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Comment">Comment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="Home">
+        <div class="profile-picture">
+            <img src="/wwwroot/img/1.png" alt="Profil Resmi">
+        </div>
+        <h1>John Doe</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero laboriosam error nesciunt voluptas atque maxime amet totam, consectetur aperiam! Culpa sequi modi quasi beatae fugit ratione cupiditate at enim voluptatum.</p>
+    </section>
+    <section id="Portfolio">
+        <h2>Portföy</h2>
+        <p>İlgi Alanlarım</p>
+        <div class="info-container">
+            <div class="info"><i class="fas fa-laptop"></i><p>Bilgisayar Programlama</p></div>
+            <div class="info"><i class="fas fa-paint-brush"></i><p>Tasarım</p></div>
+            <div class="info"><i class="fas fa-camera"></i><p>Fotoğrafçılık</p></div>
+        </div>
+    </section>
+    <section id="Education">
+        <h2>Eğitimlerim</h2>
+        <p>Verdiğim Eğitimler</p>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="/wwwroot/img/1.png" alt="">
+                <div class="overlay">
+                    <h3>Web Geliştirme Eğitimi</h3>
+                    <p>Bu eğitimde HTML, CSS ve JavaScript konularını ele aldık.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/wwwroot/img/1.png" alt="">
+                <div class="overlay">
+                    <h3>Web Geliştirme Eğitimi</h3>
+                    <p>Bu eğitimde HTML, CSS ve JavaScript konularını ele aldık.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="/wwwroot/img/1.png" alt="">
+                <div class="overlay">
+                    <h3>Web Geliştirme Eğitimi</h3>
+                    <p>Bu eğitimde HTML, CSS ve JavaScript konularını ele aldık.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Comment">
+        <h2>Yorumlar</h2>
+        <p>Yapılan Yorumlar</p>
+        <div class="comment-container">
+            <div class="comment-card">
+                <img src="/wwwroot/img/1.png" alt="">
+                <div class="card-description">
+                    <h3>Yorum Başlığı</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                </div>
+            </div>
+            <div class="comment-card">
+                <img src="/wwwroot/img/1.png" alt="">
+                <div class="card-description">
+                    <h3>Yorum Başlığı</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                </div>
+            </div>
+            <div class="comment-card">
+                <img src="/wwwroot/img/1.png" alt="">
+                <div class="card-description">
+                    <h3>Yorum Başlığı</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer><p>&copy; 2024 John Doe. Tüm hakları saklıdır.</p></footer>
+</body>
+</html>
