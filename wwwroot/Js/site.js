@@ -1,0 +1,1 @@
+alert("Alert message from site.js");

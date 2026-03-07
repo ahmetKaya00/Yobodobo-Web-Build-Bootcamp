@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS still works in DOM manipulation */
+        #header {
+            color: blue;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Hello, World!</h1>
+    <p>This is a paragraph.</p>
+    <button id="btn">Tıkla</button>
+    <script>
+        //DOM
+        //Document Object Model (DOM), web sayfasının yapısını temsil eden bir modeldir. JavaScript, DOM aracılığıyla web sayfasındaki öğelere erişebilir, onları değiştirebilir ve etkileşimde bulunabilir.
+        //DOM, web sayfasındaki her öğeyi bir nesne olarak temsil eder. Bu nesneler, HTML etiketleri, metin düğümleri, yorumlar ve diğer öğeleri içerebilir. JavaScript, bu nesnelere erişmek ve onları manipüle etmek için çeşitli yöntemler sağlar.
+
+        //Element Seçimi
+        let header = document.getElementById("header"); // ID ile seçim
+        let paragraph = document.querySelector("p"); // CSS selector ile seçim
+        let button = document.getElementById("btn"); // ID ile seçim
+
+        console.log("Header:", header);
+        console.log("Paragraph:", paragraph.textContent);
+
+        header.textContent = "Merhaba, Dünya!"; // Metin içeriğini değiştirme
+        header.style.color = "red"; // Stil değiştirme
+        header.style.fontSize = "30px"; // Font boyutunu değiştirme
+
+        button.addEventListener("click", function() {
+            alert("Butona tıklandı!");
+        });
+
+        //Yeni bir öğe oluşturma
+        let newParagraph = document.createElement("p");
+        newParagraph.textContent = "Yeni bir paragraf.";
+        document.body.appendChild(newParagraph); // Yeni öğeyi sayfaya ekleme
+
+        let ul = document.createElement("ul");
+        for (let i = 1; i <= 10; i++) {
+            let li = document.createElement("li");
+            li.textContent = "Liste öğesi " + i;
+            ul.appendChild(li);
+        }
+        document.body.appendChild(ul); // Listeyi sayfaya ekleme
+    </script>
+</body>
+</html>

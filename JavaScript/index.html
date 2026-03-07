@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // This is a JavaScript comment
+        /* This is a multi-line comment
+           that spans multiple lines */
+        
+        // Değişkenler
+        var name = "John"; // String
+        let age = 30; // Number
+        const PI = 3.14; // Constant
+
+        var name = "Ahmet"; // var ile yeniden tanımlama mümkün
+        //let age = 25; // let ile yeniden tanımlama mümkün değil, hata verir
+        age = 25; // let ile tanımlanan değişkenin değerini değiştirebiliriz
+
+        console.log("Name:", name);
+        console.log("Age:", age);
+        console.log("PI:", PI);
+
+        let str = "123";
+        let num = Number(str); // String'i sayıya dönüştürme
+        console.log("String:", str);
+        console.log("Number:", num);
+
+        //Kapalı Dönüştürme
+
+        let result = "10" + 5; // Toplama
+        let tricky = "10" + "5"; // İki string birleştirilir, sonuç "105" olur 
+        let subtraction = "10" - 5; // Çıkarma
+        let multiplication = "10" * 5; // Çarpma
+        let division = "10" / 5; // Bölme
+
+        console.log("Result:", result);
+        console.log("Subtraction:", subtraction);
+        console.log("Multiplication:", multiplication);
+        console.log("Division:", division);
+
+        //Atama Operatörleri
+        let x = 10;
+        x += 5; // x = x + 5
+        x -= 3; // x = x - 3
+        x *= 2; // x = x * 2
+        x /= 4; // x = x / 4
+        console.log("Final value of x:", x);
+
+        // Karşılaştırma Operatörleri
+        let a = 5
+        let b = "5";
+        console.log("a == b:", a == b); // true, çünkü değerler eşit
+        console.log("a === b:", a === b); // false, çünkü türler farklı 
+        console.log("a != b:", a != b); // false, çünkü değerler eşit
+        console.log("a !== b:", a !== b); // true, çünkü türler farklı
+
+        //Döngüler
+        for (let i = 0; i < 5; i++) {
+            console.log("For loop iteration:", i);
+        }
+
+        let j = 0;
+        while (j < 5) {
+            console.log("While loop iteration:", j);
+            j++;
+        }
+
+        let i = 6;
+        do {
+            console.log("Do-While loop iteration:", i);
+            i++;
+        } while (i < 5);
+
+        let person = {
+            name: "Alice",
+            age: 25,
+            city: "New York"
+        };
+        for (let key in person) {
+            console.log(key + ": " + person[key]);
+        }
+
+        //Diziler
+        let mixedArray = [1, "Banana", true];
+        console.log("Mixed Array:", mixedArray);
+
+        let arrayLength = mixedArray.length; // Dizinin uzunluğunu alır
+        console.log("Array Length:", arrayLength);
+
+        let firstElement = mixedArray[0]; // Dizinin ilk elemanına erişim
+        console.log("First Element:", firstElement);
+
+        let lastElement = mixedArray[mixedArray.length - 1]; // Dizinin son elemanına erişim
+        console.log("Last Element:", lastElement);
+
+        mixedArray.push("New Element"); // Dizinin sonuna yeni bir eleman ekler
+        console.log("After push:", mixedArray);
+
+        let removedElement = mixedArray.pop(); // Dizinin son elemanını çıkarır ve döndürür
+        console.log("Removed Element:", removedElement);
+        mixedArray[1] = "Apple"; // Dizinin ikinci elemanını günceller
+        console.log("After update:", mixedArray);
+
+        //if-else
+        let score = 85;
+
+        if (score >= 90) {
+            console.log("Grade: A");
+        } else if (score >= 80) {
+            console.log("Grade: B");
+        } else if (score >= 70) {
+            console.log("Grade: C");
+        } else if (score >= 60) {
+            console.log("Grade: D");
+        } else {
+            console.log("Grade: F");
+        }
+
+        let age2 = 20;
+        let isAdult = age2 >= 18 ? "Yes" : "No"; // Ternary operator
+        console.log("Is adult?", isAdult);
+
+        // Fonksiyonlar
+        function greet() {
+            console.log("Hello, World!");
+        }
+
+        greet(); // Fonksiyonu çağırır
+        greet(); // Fonksiyonu tekrar çağırır
+
+        function greetPerson(name = "Misafir") {
+            console.log("Hello, " + name + "!");
+        }
+
+        greetPerson(); // Fonksiyonu çağırır
+        greetPerson("Bob"); // Fonksiyonu tekrar çağırır
+
+        function add(a, b) {
+            return a + b; // Toplama işlemi yapar ve sonucu döndürür
+        }
+        let sum = add(5, 10); // Fonksiyonu çağırır ve sonucu sum değişkenine atar
+        console.log("Sum:", sum);
+
+        let sayHello = function(name) {
+            console.log("Hello, " + name + "!");
+        };
+
+        sayHello("Charlie"); // Fonksiyonu çağırır
+
+        let multiply = (a, b) => a * b; // Arrow function
+        let product = multiply(4, 5); // Fonksiyonu çağırır
+        console.log("Product:", product);
+
+        (function() {
+            console.log("This is an IIFE (Immediately Invoked Function Expression)");
+        })(); // Fonksiyonu tanımlar ve hemen çağırır
+
+
+    </script>
+</body>
+</html>
